@@ -1,0 +1,42 @@
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #212529; }
+.code-block { font-family: 'Roboto Mono', monospace; font-size: 0.875rem; background-color: #1e1e1e; color: #d4d4d4; padding: 1.25rem; border-radius: 0.5rem; overflow-x: auto; position: relative; }
+.code-block pre, .code-block code { white-space: pre-wrap; word-wrap: break-word; }
+
+/* --- Interactivité --- */
+.copy-btn { position: absolute; top: 0.5rem; right: 0.5rem; background-color: #4a5568; color: white; border: none; padding: 0.25rem 0.5rem; border-radius: 0.25rem; cursor: pointer; font-size: 0.75rem; opacity: 0; transition: opacity 0.2s; }
+.code-block:hover .copy-btn { opacity: 1; }
+.copy-btn:hover { background-color: #2d3748; }
+
+/* --- Règle CRUCIALE pour masquer la solution --- */
+.solution { display: none; }
+/* ----------------------------------------------- */
+
+.solution.visible { display: block; margin-top: 1rem; border-left: 4px solid #28a745; padding: 1rem; background-color: #e9f7ef; border-radius: 0.25rem; }
+.solution .code-block { background-color: #2c3e50; }
+
+/* --- Coloration Syntaxique Python --- */
+.py-keyword { color: #c586c0; font-weight: bold; }
+.py-function { color: #dcdcaa; }
+.py-string { color: #ce9178; }
+.py-comment { color: #6a9955; }
+.py-number { color: #b5cea8; }
+.py-operator { color: #d4d4d4; }
+.py-builtin { color: #569cd6; }
+.py-variable { color: #9cdcfe; }
+
+   .code-block pre {
+        white-space: pre-wrap;  /* La règle MAGIQUE : conserve les espaces et l'indentation */
+        word-wrap: break-word;   /* Permet aux lignes trop longues de passer à la ligne */
+        background-color: #060606; /* Un fond gris clair pour mieux voir les blocs */
+        padding: 1rem;           /* Un peu d'espace à l'intérieur du bloc */
+        border-radius: 8px;      /* Des coins arrondis */
+        overflow-x: auto;        /* Ajoute une barre de défilement si une ligne est vraiment trop longue */
+    }
+
+    .solution {
+        display: none; /* Cache les solutions par défaut */
+        margin-top: 1rem;
+        border-left: 4px solid #10b981; /* Une barre verte pour les solutions */
+    }
+

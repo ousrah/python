@@ -20,11 +20,11 @@ $parcours = [
             ["titre" => "Les Boucles (for, while)", "ancre" => "#boucles"],
         ]
     ],
-   "Partie 3" => [
-        "titre" => "Fonctions, Documentation et Structures de Données", // Titre mis à jour
+    "Partie 3" => [
+        "titre" => "Fonctions, Documentation et Structures de Données",
         "chapitres" => [
             ["titre" => "Les Fonctions", "ancre" => "#fonctions"],
-            ["titre" => "La Documentation (Docstrings)", "ancre" => "#documentation"], // NOUVEAU
+            ["titre" => "La Documentation (Docstrings)", "ancre" => "#documentation"],
             ["titre" => "Les Listes", "ancre" => "#listes"],
             ["titre" => "Les Tuples", "ancre" => "#tuples"],
             ["titre" => "Les Dictionnaires", "ancre" => "#dictionnaires"],
@@ -32,15 +32,27 @@ $parcours = [
         ]
     ],
     "Partie 4" => [
-        "titre" => "Programmation Robuste et Fichiers", // Titre mis à jour
+        "titre" => "Programmation Robuste et Fichiers",
         "chapitres" => [
-            ["titre" => "La Gestion des Exceptions", "ancre" => "#exceptions"], // NOUVEAU
+            ["titre" => "La Gestion des Exceptions", "ancre" => "#exceptions"],
             ["titre" => "Manipulation de Fichiers Texte", "ancre" => "#fichiers"],
             ["titre" => "Travailler avec les Fichiers CSV", "ancre" => "#fichiers-csv"],
             ["titre" => "Travailler avec les Fichiers JSON", "ancre" => "#fichiers-json"],
         ]
+    ],
+    // NOUVELLE PARTIE AJOUTÉE ICI
+    "Partie 5" => [
+        "titre" => "Modules, Bibliothèques et l'Écosystème Python",
+        "chapitres" => [
+            ["titre" => "Utiliser des Bibliothèques (Standard & Externe)", "ancre" => "#bibliotheques"],
+        ]
+        ],
+     "Partie 6" => [
+        "titre" => "Conclusion & Perspectives",
+        "chapitres" => [
+            ["titre" => "Et après???", "ancre" => "#conclusion"],
+        ]
     ]
 ];
-
 
 ?>

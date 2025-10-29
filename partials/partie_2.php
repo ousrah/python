@@ -91,24 +91,24 @@
 <span class="py-keyword">if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;</span> <span class="py-variable">b</span>:
 <span class="py-comment">    # Si a est plus petit que b</span>
 <span class="py-keyword">    if</span> <span class="py-variable">b</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
-<span class="py-comment">         # a &lt; b &lt; c</span>
+<span class="py-comment">        # a &lt; b &lt; c</span>
 <span class="py-function">        print</span>(<span class="py-variable">a</span>, <span class="py-variable">b</span>, <span class="py-variable">c</span>)
 <span class="py-keyword">    elif</span> <span class="py-variable">a</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
-<span class="py-comment">         # a &lt; c &lt;= b</span>
+<span class="py-comment">        # a &lt; c &lt;= b</span>
 <span class="py-function">        print</span>(<span class="py-variable">a</span>, <span class="py-variable">c</span>, <span class="py-variable">b</span>)
 <span class="py-keyword">    else</span>:
-<span class="py-comment">         # c &lt;= a &lt; b</span>
+<span class="py-comment">        # c &lt;= a &lt; b</span>
 <span class="py-function">        print</span>(<span class="py-variable">c</span>, <span class="py-variable">a</span>, <span class="py-variable">b</span>)
 <span class="py-keyword">else</span>:
 <span class="py-comment">    # Si b est plus petit ou égal à a</span>
 <span class="py-keyword">    if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
-<span class="py-comment">         # b &lt;= a &lt; c</span>
+<span class="py-comment">        # b &lt;= a &lt; c</span>
 <span class="py-function">        print</span>(<span class="py-variable">b</span>, <span class="py-variable">a</span>, <span class="py-variable">c</span>)
-<span class="py-keyword">     elif</span> <span class="py-variable">b</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
-<span class="py-comment">         # b &lt; c &lt;= a</span>
+<span class="py-keyword">    elif</span> <span class="py-variable">b</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
+<span class="py-comment">        # b &lt; c &lt;= a</span>
 <span class="py-function">        print</span>(<span class="py-variable">b</span>, <span class="py-variable">c</span>, <span class="py-variable">a</span>)
-<span class="py-keyword">     else</span>:
-<span class="py-comment">         # c &lt;= b &lt;= a</span>
+<span class="py-keyword">    else</span>:
+<span class="py-comment">        # c &lt;= b &lt;= a</span>
 <span class="py-function">        print</span>(<span class="py-variable">c</span>, <span class="py-variable">b</span>, <span class="py-variable">a</span>)
 </code></pre>
     

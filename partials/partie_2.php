@@ -81,24 +81,39 @@
 <span class="py-keyword">else</span>:
     <span class="py-variable">categorie</span> <span class="py-operator">=</span> <span class="py-string">"Surpoids"</span>
 <span class="py-function">print</span>(<span class="py-string">f"Votre IMC est de {<span class="py-variable">imc</span>:.2f}. Catégorie : {<span class="py-variable">categorie</span>}."</span>)</code></pre></div></div></div>
-            <div class="bg-white p-6 rounded-lg shadow-sm border"><h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 5 : Tri de Trois Nombres</h4><p class="text-gray-700 mb-4">Demandez trois nombres (a, b, c). Affichez-les dans l'ordre croissant en utilisant des conditions.</p><button hidden onclick="toggleSolution('sol_cond_5')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button><div id="sol_cond_5" class="solution"><div class="code-block"><pre><code><span class="py-variable">a</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Nombre a : "</span>))
-<span class="py-variable">b</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Nombre b : "</span>))
-<span class="py-variable">c</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Nombre c : "</span>))
-<span class="py-keyword">if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;=</span> <span class="py-variable">b</span> <span class="py-keyword">and</span> <span class="py-variable">a</span> <span class="py-operator">&lt;=</span> <span class="py-variable">c</span>:
-    <span class="py-keyword">if</span> <span class="py-variable">b</span> <span class="py-operator">&lt;=</span> <span class="py-variable">c</span>:
-        <span class="py-function">print</span>(<span class="py-variable">a</span>, <span class="py-variable">b</span>, <span class="py-variable">c</span>)
-    <span class="py-keyword">else</span>:
-        <span class="py-function">print</span>(<span class="py-variable">a</span>, <span class="py-variable">c</span>, <span class="py-variable">b</span>)
-<span class="py-keyword">elif</span> <span class="py-variable">b</span> <span class="py-operator">&lt;=</span> <span class="py-variable">a</span> <span class="py-keyword">and</span> <span class="py-variable">b</span> <span class="py-operator">&lt;=</span> <span class="py-variable">c</span>:
-    <span class="py-keyword">if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;=</span> <span class="py-variable">c</span>:
-        <span class="py-function">print</span>(<span class="py-variable">b</span>, <span class="py-variable">a</span>, <span class="py-variable">c</span>)
-    <span class="py-keyword">else</span>:
-        <span class="py-function">print</span>(<span class="py-variable">b</span>, <span class="py-variable">c</span>, <span class="py-variable">a</span>)
+            <div class="bg-white p-6 rounded-lg shadow-sm border"><h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 5 : Tri de Trois Nombres</h4><p class="text-gray-700 mb-4">Demandez trois nombres (a, b, c). Affichez-les dans l'ordre croissant en utilisant des conditions.</p><button hidden onclick="toggleSolution('sol_cond_5')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button><div id="sol_cond_5" class="solution"><div class="code-block">
+                
+            
+           <pre><code><span class="py-variable">a</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Entrez le nombre a : "</span>))
+<span class="py-variable">b</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Entrez le nombre b : "</span>))
+<span class="py-variable">c</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Entrez le nombre c : "</span>))
+
+<span class="py-keyword">if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;</span> <span class="py-variable">b</span>:
+<span class="py-comment">    # Si a est plus petit que b</span>
+<span class="py-keyword">    if</span> <span class="py-variable">b</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
+<span class="py-comment">         # a &lt; b &lt; c</span>
+<span class="py-function">        print</span>(<span class="py-variable">a</span>, <span class="py-variable">b</span>, <span class="py-variable">c</span>)
+<span class="py-keyword">    elif</span> <span class="py-variable">a</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
+<span class="py-comment">         # a &lt; c &lt;= b</span>
+<span class="py-function">        print</span>(<span class="py-variable">a</span>, <span class="py-variable">c</span>, <span class="py-variable">b</span>)
+<span class="py-keyword">    else</span>:
+<span class="py-comment">         # c &lt;= a &lt; b</span>
+<span class="py-function">        print</span>(<span class="py-variable">c</span>, <span class="py-variable">a</span>, <span class="py-variable">b</span>)
 <span class="py-keyword">else</span>:
-    <span class="py-keyword">if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;=</span> <span class="py-variable">b</span>:
-        <span class="py-function">print</span>(<span class="py-variable">c</span>, <span class="py-variable">a</span>, <span class="py-variable">b</span>)
-    <span class="py-keyword">else</span>:
-        <span class="py-function">print</span>(<span class="py-variable">c</span>, <span class="py-variable">b</span>, <span class="py-variable">a</span>)</code></pre></div></div></div>
+<span class="py-comment">    # Si b est plus petit ou égal à a</span>
+<span class="py-keyword">    if</span> <span class="py-variable">a</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
+<span class="py-comment">         # b &lt;= a &lt; c</span>
+<span class="py-function">        print</span>(<span class="py-variable">b</span>, <span class="py-variable">a</span>, <span class="py-variable">c</span>)
+<span class="py-keyword">     elif</span> <span class="py-variable">b</span> <span class="py-operator">&lt;</span> <span class="py-variable">c</span>:
+<span class="py-comment">         # b &lt; c &lt;= a</span>
+<span class="py-function">        print</span>(<span class="py-variable">b</span>, <span class="py-variable">c</span>, <span class="py-variable">a</span>)
+<span class="py-keyword">     else</span>:
+<span class="py-comment">         # c &lt;= b &lt;= a</span>
+<span class="py-function">        print</span>(<span class="py-variable">c</span>, <span class="py-variable">b</span>, <span class="py-variable">a</span>)
+</code></pre>
+    
+    
+    </div></div></div>
         </div></div>
         <div class="text-right mt-8"> <a href="#page-top" class="text-sm font-semibold text-blue-600 hover:underline">↑ Retour en haut</a> </div>
     </section>

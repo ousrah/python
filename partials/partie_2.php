@@ -180,6 +180,16 @@
         <span class="py-keyword">continue</span>
     <span class="py-function">print</span>(<span class="py-string">f"{<span class="py-variable">i</span>} est impair."</span>)</code></pre></div></div>
 
+
+     <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 2 : Utilisation des pas dans un range</h4><div class="code-block">
+        
+<pre><code><span class="py-keyword">for</span> <span class="py-variable">i</span> <span class="py-keyword">in</span> <span class="py-function">range</span>(1, 10, 2):
+<span class="py-function">    print</span>(<span class="py-string">f"{i} est impair."</span>)</code></pre>
+
+
+</div></div>
+
+
             <div class="bg-gray-100 p-4 rounded-lg mt-8"><h4 class="text-2xl font-bold mb-2 text-gray-700">La Boucle `while`</h4></div>
             <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 1 : Validation de saisie</h4><div class="code-block"><pre><code><span class="py-variable">mot_de_passe</span> <span class="py-operator">=</span> <span class="py-string">""</span>
 <span class="py-keyword">while</span> <span class="py-variable">mot_de_passe</span> <span class="py-operator">!=</span> <span class="py-string">"python123"</span>:

@@ -302,7 +302,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 1 : Salutation Personnalisée</h4>
             <p class="text-gray-700 mb-4">Demandez le prénom et le nom de l'utilisateur, puis affichez un message de bienvenue sous la forme "Bonjour [Prénom] [Nom] !".</p>
-            <button hidden onclick="toggleSolution('solution_ex1')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex1')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex1" class="solution"><div class="code-block"><pre><code><span class="py-variable">prenom</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Quel est votre prénom ? "</span>)
 <span class="py-variable">nom</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Quel est votre nom ? "</span>)
 <span class="py-function">print</span>(<span class="py-string">f"Bonjour {<span class="py-variable">prenom</span>} {<span class="py-variable">nom</span>} !"</span>)</code></pre></div></div>
@@ -312,7 +312,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 2 : Calcul de la Surface d'un Rectangle</h4>
             <p class="text-gray-700 mb-4">Demandez la longueur et la largeur d'un rectangle à l'utilisateur (qui peuvent être des nombres à virgule), puis calculez et affichez sa surface.</p>
-            <button hidden onclick="toggleSolution('solution_ex2')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex2')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex2" class="solution"><div class="code-block"><pre><code><span class="py-variable">longueur</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Entrez la longueur du rectangle : "</span>))
 <span class="py-variable">largeur</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Entrez la largeur du rectangle : "</span>))
 <span class="py-variable">surface</span> <span class="py-operator">=</span> <span class="py-variable">longueur</span> <span class="py-operator">*</span> <span class="py-variable">largeur</span>
@@ -323,7 +323,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 3 : Répéteur de Mot</h4>
             <p class="text-gray-700 mb-4">Demandez un mot et un nombre entier. Affichez ensuite le mot répété le nombre de fois demandé.</p>
-            <button hidden onclick="toggleSolution('solution_ex3')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex3')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex3" class="solution"><div class="code-block"><pre><code><span class="py-variable">mot</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez un mot : "</span>)
 <span class="py-variable">nombre</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Combien de fois le répéter ? "</span>))
 <span class="py-function">print</span>(<span class="py-variable">mot</span> <span class="py-operator">*</span> <span class="py-variable">nombre</span>)</code></pre></div></div>
@@ -333,7 +333,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 4 : Calculateur de Pourboire</h4>
             <p class="text-gray-700 mb-4">Demandez le montant d'une addition et le pourcentage de pourboire souhaité (ex: 15 pour 15%). Calculez le montant du pourboire et le total à payer.</p>
-            <button hidden onclick="toggleSolution('solution_ex4')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex4')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex4" class="solution"><div class="code-block"><pre><code><span class="py-variable">addition</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Montant de l'addition : "</span>))
 <span class="py-variable">pourcentage</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Pourcentage du pourboire (ex: 15) : "</span>))
 <span class="py-variable">pourboire</span> <span class="py-operator">=</span> <span class="py-variable">addition</span> <span class="py-operator">*</span> (<span class="py-variable">pourcentage</span> <span class="py-operator">/</span> <span class="py-number">100</span>)
@@ -346,7 +346,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 5 : Convertisseur de Durée</h4>
             <p class="text-gray-700 mb-4">Demandez un nombre total de minutes, puis convertissez-le en heures et minutes (ex: 130 minutes = 2 heure(s) et 10 minute(s)).</p>
-            <button hidden onclick="toggleSolution('solution_ex5')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex5')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex5" class="solution"><div class="code-block"><pre><code><span class="py-variable">total_minutes</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Entrez une durée en minutes : "</span>))
 <span class="py-variable">heures</span> <span class="py-operator">=</span> <span class="py-variable">total_minutes</span> <span class="py-operator">//</span> <span class="py-number">60</span>  <span class="py-comment"># La division entière // donne le nombre d'heures</span>
 <span class="py-variable">minutes</span> <span class="py-operator">=</span> <span class="py-variable">total_minutes</span> <span class="py-operator">%</span> <span class="py-number">60</span>   <span class="py-comment"># Le modulo % donne le reste de la division</span>
@@ -357,7 +357,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 6 : Reçu Simplifié</h4>
             <p class="text-gray-700 mb-4">Demandez le nom d'un produit, sa quantité et son prix unitaire. Affichez un mini-reçu bien formaté.</p>
-            <button hidden onclick="toggleSolution('solution_ex6')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex6')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex6" class="solution"><div class="code-block"><pre><code><span class="py-variable">produit</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Nom du produit : "</span>)
 <span class="py-variable">quantite</span> <span class="py-operator">=</span> <span class="py-builtin">int</span>(<span class="py-function">input</span>(<span class="py-string">"Quantité achetée : "</span>))
 <span class="py-variable">prix_unitaire</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Prix unitaire (DH) : "</span>))
@@ -372,7 +372,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 7 : Permutation de Valeurs</h4>
             <p class="text-gray-700 mb-4">Demandez deux valeurs, `A` et `B`, à l'utilisateur. Affichez-les, puis échangez leurs valeurs (ce qui était dans `A` va dans `B` et vice-versa) et affichez-les de nouveau.</p>
-            <button hidden onclick="toggleSolution('solution_ex7')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex7')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex7" class="solution"><div class="code-block"><pre><code><span class="py-variable">a</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez la valeur de A : "</span>)
 <span class="py-variable">b</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez la valeur de B : "</span>)
 <span class="py-function">print</span>(<span class="py-string">f"Avant permutation : A = {<span class="py-variable">a</span>}, B = {<span class="py-variable">b</span>}"</span>)
@@ -385,7 +385,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 8 : Longueur d'un Nom</h4>
             <p class="text-gray-700 mb-4">Demandez son nom complet à l'utilisateur et dites-lui de combien de caractères il est composé (espaces inclus) en utilisant la fonction `len()`.</p>
-            <button hidden onclick="toggleSolution('solution_ex8')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex8')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex8" class="solution"><div class="code-block"><pre><code><span class="py-variable">nom_complet</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez votre nom complet : "</span>)
 <span class="py-variable">longueur</span> <span class="py-operator">=</span> <span class="py-builtin">len</span>(<span class="py-variable">nom_complet</span>)
 <span class="py-function">print</span>(<span class="py-string">f"Votre nom complet contient {<span class="py-variable">longueur</span>} caractères."</span>)</code></pre></div></div>
@@ -395,7 +395,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 9 : Calcul de la Moyenne</h4>
             <p class="text-gray-700 mb-4">Demandez 3 notes à l'utilisateur (maths, français, histoire) et calculez la moyenne de ces trois notes. Affichez le résultat avec une seule décimale.</p>
-            <button hidden onclick="toggleSolution('solution_ex9')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button  onclick="toggleSolution('solution_ex9')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex9" class="solution"><div class="code-block"><pre><code><span class="py-function">print</span>(<span class="py-string">"--- Calcul de Moyenne ---"</span>)
 <span class="py-variable">note_maths</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Note de Maths : "</span>))
 <span class="py-variable">note_fr</span> <span class="py-operator">=</span> <span class="py-builtin">float</span>(<span class="py-function">input</span>(<span class="py-string">"Note de Français : "</span>))
@@ -408,7 +408,7 @@ python -m notebook</code></pre></div>
         <div class="bg-white p-6 rounded-lg shadow-sm border">
             <h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 10 : Générateur d'Acronyme</h4>
             <p class="text-gray-700 mb-4">Demandez à l'utilisateur trois mots (par exemple "Office", "Formation", "Professionnelle"). Affichez l'acronyme en prenant la première lettre de chaque mot en majuscule.</p>
-            <button hidden  onclick="toggleSolution('solution_ex10')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
+            <button   onclick="toggleSolution('solution_ex10')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button>
             <div id="solution_ex10" class="solution"><div class="code-block"><pre><code><span class="py-variable">mot1</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez le premier mot : "</span>)
 <span class="py-variable">mot2</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez le deuxième mot : "</span>)
 <span class="py-variable">mot3</span> <span class="py-operator">=</span> <span class="py-function">input</span>(<span class="py-string">"Entrez le troisième mot : "</span>)

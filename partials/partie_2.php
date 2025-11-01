@@ -163,24 +163,24 @@
 <div class="bg-gray-100 p-4 rounded-lg"><h4 class="text-2xl font-bold mb-2 text-gray-700">La Boucle `for`</h4></div>
 <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 1 : Utilisation de `range()`</h4><div class="code-block"><pre><code><span class="py-comment"># Compter de 0 à 4</span>
 <span class="py-keyword">for</span> <span class="py-variable">i</span> <span class="py-keyword">in</span> <span class="py-function">range</span>(<span class="py-number">5</span>):
-<span class="py-function">print</span>(<span class="py-string">f"Le compteur est à {<span class="py-variable">i</span>}"</span>)
+<span class="py-function">    print</span>(<span class="py-string">f"Le compteur est à {<span class="py-variable">i</span>}"</span>)
 <span class="py-comment"># Table de multiplication</span>
 <span class="py-keyword">for</span> <span class="py-variable">i</span> <span class="py-keyword">in</span> <span class="py-function">range</span>(<span class="py-number">1</span>, <span class="py-number">11</span>):
-<span class="py-function">print</span>(<span class="py-string">f"7 x {<span class="py-variable">i</span>} = {<span class="py-number">7</span> <span class="py-operator">*</span> <span class="py-variable">i</span>}"</span>)</code></pre></div></div>
+<span class="py-function">    print</span>(<span class="py-string">f"7 x {<span class="py-variable">i</span>} = {<span class="py-number">7</span> <span class="py-operator">*</span> <span class="py-variable">i</span>}"</span>)</code></pre></div></div>
 <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 2 : Contrôler la boucle avec break et continue</h4><div class="code-block"><pre><code><span class="py-comment"># Arrêter la boucle avec break</span>
 <span class="py-keyword">for</span> <span class="py-variable">i</span> <span class="py-keyword">in</span> <span class="py-function">range</span>(<span class="py-number">1</span>, <span class="py-number">20</span>):
-<span class="py-keyword">if</span> <span class="py-variable">i</span> <span class="py-operator">%</span> <span class="py-number">5</span> <span class="py-operator">==</span> <span class="py-number">0</span>:
-<span class="py-function">print</span>(<span class="py-string">f"Trouvé ! {<span class="py-variable">i</span>} est un multiple de 5."</span>)
-<span class="py-keyword">break</span>
+<span class="py-keyword">    if</span> <span class="py-variable">i</span> <span class="py-operator">%</span> <span class="py-number">5</span> <span class="py-operator">==</span> <span class="py-number">0</span>:
+<span class="py-function">        print</span>(<span class="py-string">f"Trouvé ! {<span class="py-variable">i</span>} est un multiple de 5."</span>)
+<span class="py-keyword">        break</span>
 <span class="py-comment"># Sauter une itération avec continue</span>
 <span class="py-keyword">for</span> <span class="py-variable">i</span> <span class="py-keyword">in</span> <span class="py-function">range</span>(<span class="py-number">1</span>, <span class="py-number">10</span>):
-<span class="py-keyword">if</span> <span class="py-variable">i</span> <span class="py-operator">%</span> <span class="py-number">2</span> <span class="py-operator">==</span> <span class="py-number">0</span>: <span class="py-comment"># Si i est pair</span>
-<span class="py-keyword">continue</span>
-<span class="py-function">print</span>(<span class="py-string">f"{<span class="py-variable">i</span>} est impair."</span>)</code></pre></div></div>
+<span class="py-keyword">    if</span> <span class="py-variable">i</span> <span class="py-operator">%</span> <span class="py-number">2</span> <span class="py-operator">==</span> <span class="py-number">0</span>: <span class="py-comment"># Si i est pair</span>
+<span class="py-keyword">        continue</span>
+<span class="py-function">    print</span>(<span class="py-string">f"{<span class="py-variable">i</span>} est impair."</span>)</code></pre></div></div>
 
 <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 3 : Utilisation des pas dans un range</h4><div class="code-block">
 <pre><code><span class="py-keyword">for</span> <span class="py-variable">i</span> <span class="py-keyword">in</span> <span class="py-function">range</span>(1, 10, 2):
-<span class="py-function"> print</span>(<span class="py-string">f"{i} est impair."</span>)</code></pre>
+<span class="py-function">    print</span>(<span class="py-string">f"{i} est impair."</span>)</code></pre>
 </div></div>
 </div>
 <h3 class="text-2xl font-semibold mb-3 mt-12">Les Listes de Compréhension : Une Alternative Élégante aux Boucles</h3>

@@ -636,3 +636,113 @@
         </div></div>
         <div class="text-right mt-8"> <a href="#page-top" class="text-sm font-semibold text-blue-600 hover:underline">↑ Retour en haut</a> </div>
     </section>
+
+    <!-- =================================================================== -->
+    <!-- CHAPITRE 14 : CONVERSIONS ENTRE COLLECTIONS -->
+    <!-- =================================================================== -->
+    <section id="conversions-collections" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-3">Chapitre 14 : Conversions Entre Collections</h3>
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">Python offre une grande flexibilité pour passer d'un type de collection à un autre. Comprendre comment et pourquoi convertir une liste en ensemble, un tuple en dictionnaire, etc., est une compétence essentielle qui permet de résoudre de nombreux problèmes de manière élégante et efficace.</p>
+        
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 1 : D'une Liste vers d'autres types</h4><p class="text-gray-700 mb-4">La conversion d'une liste est très courante, notamment pour éliminer les doublons (avec <code>set()</code>) ou pour créer une version immuable (avec <code>tuple()</code>).</p><div class="code-block"><pre><code><span class="py-variable">ma_liste</span> <span class="py-operator">=</span> [<span class="py-string">'a'</span>, <span class="py-string">'b'</span>, <span class="py-string">'a'</span>, <span class="py-string">'c'</span>, <span class="py-string">'b'</span>]
+
+<span class="py-comment"># Liste vers Tuple (immuable)</span>
+<span class="py-variable">mon_tuple</span> <span class="py-operator">=</span> <span class="py-builtin">tuple</span>(<span class="py-variable">ma_liste</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Liste vers tuple : {<span class="py-variable">mon_tuple</span>}"</span>) <span class="py-comment"># Output: ('a', 'b', 'a', 'c', 'b')</span>
+
+<span class="py-comment"># Liste vers Set (élimine les doublons)</span>
+<span class="py-variable">mon_set</span> <span class="py-operator">=</span> <span class="py-builtin">set</span>(<span class="py-variable">ma_liste</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Liste vers set : {<span class="py-variable">mon_set</span>}"</span>) <span class="py-comment"># Output: {'a', 'c', 'b'} (l'ordre n'est pas garanti)</span>
+
+<span class="py-comment"># Liste de paires (clé, valeur) vers Dictionnaire</span>
+<span class="py-variable">liste_de_paires</span> <span class="py-operator">=</span> [[<span class="py-string">'nom'</span>, <span class="py-string">'Alice'</span>], [<span class="py-string">'age'</span>, <span class="py-number">25</span>]]
+<span class="py-variable">mon_dict</span> <span class="py-operator">=</span> <span class="py-builtin">dict</span>(<span class="py-variable">liste_de_paires</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Liste de paires vers dict : {<span class="py-variable">mon_dict</span>}"</span>) <span class="py-comment"># Output: {'nom': 'Alice', 'age': 25}</span></code></pre></div></div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 2 : D'un Tuple vers d'autres types</h4><p class="text-gray-700 mb-4">La conversion d'un tuple est souvent nécessaire lorsque vous avez besoin de modifier une collection qui était initialement immuable.</p><div class="code-block"><pre><code><span class="py-variable">mon_tuple</span> <span class="py-operator">=</span> (<span class="py-number">10</span>, <span class="py-number">20</span>, <span class="py-number">30</span>, <span class="py-number">10</span>)
+
+<span class="py-comment"># Tuple vers Liste (pour le rendre mutable)</span>
+<span class="py-variable">ma_liste</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">mon_tuple</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Tuple vers liste : {<span class="py-variable">ma_liste</span>}"</span>) <span class="py-comment"># Output: [10, 20, 30, 10]</span>
+
+<span class="py-comment"># Tuple vers Set (pour obtenir les éléments uniques)</span>
+<span class="py-variable">mon_set</span> <span class="py-operator">=</span> <span class="py-builtin">set</span>(<span class="py-variable">mon_tuple</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Tuple vers set : {<span class="py-variable">mon_set</span>}"</span>) <span class="py-comment"># Output: {10, 20, 30}</span></code></pre></div></div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 3 : D'un Dictionnaire vers d'autres types</h4><p class="text-gray-700 mb-4">Lors de la conversion d'un dictionnaire, vous pouvez choisir de convertir ses clés, ses valeurs ou ses paires clé-valeur (items).</p><div class="code-block"><pre><code><span class="py-variable">personne</span> <span class="py-operator">=</span> {<span class="py-string">"nom"</span>: <span class="py-string">"Bob"</span>, <span class="py-string">"age"</span>: <span class="py-number">42</span>, <span class="py-string">"ville"</span>: <span class="py-string">"New York"</span>}
+
+<span class="py-comment"># Obtenir la liste des clés</span>
+<span class="py-variable">cles_liste</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">personne</span>) <span class="py-comment"># ou list(personne.keys())</span>
+<span class="py-function">print</span>(<span class="py-string">f"Dict vers liste de clés : {<span class="py-variable">cles_liste</span>}"</span>)
+
+<span class="py-comment"># Obtenir la liste des valeurs</span>
+<span class="py-variable">valeurs_liste</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">personne</span>.<span class="py-function">values</span>())
+<span class="py-function">print</span>(<span class="py-string">f"Dict vers liste de valeurs : {<span class="py-variable">valeurs_liste</span>}"</span>)
+
+<span class="py-comment"># Obtenir la liste des paires (clé, valeur) sous forme de tuples</span>
+<span class="py-variable">items_liste</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">personne</span>.<span class="py-function">items</span>())
+<span class="py-function">print</span>(<span class="py-string">f"Dict vers liste d'items : {<span class="py-variable">items_liste</span>}"</span>)
+
+<span class="py-comment"># Obtenir un tuple des clés</span>
+<span class="py-variable">cles_tuple</span> <span class="py-operator">=</span> <span class="py-builtin">tuple</span>(<span class="py-variable">personne</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Dict vers tuple de clés : {<span class="py-variable">cles_tuple</span>}"</span>)</code></pre></div></div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm"><h4 class="text-xl font-semibold mb-2">Exemple 4 : D'un Ensemble (Set) vers d'autres types</h4><p class="text-gray-700 mb-4">La conversion d'un ensemble vers une liste ou un tuple est utile lorsque vous avez besoin d'une collection ordonnée après avoir effectué des opérations ensemblistes.</p><div class="code-block"><pre><code><span class="py-variable">mon_set</span> <span class="py-operator">=</span> {<span class="py-number">100</span>, <span class="py-number">200</span>, <span class="py-number">300</span>}
+
+<span class="py-comment"># Set vers Liste</span>
+<span class="py-variable">ma_liste</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">mon_set</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Set vers liste : {<span class="py-variable">ma_liste</span>}"</span>) <span class="py-comment"># L'ordre n'est pas garanti</span>
+
+<span class="py-comment"># Set vers Tuple</span>
+<span class="py-variable">mon_tuple</span> <span class="py-operator">=</span> <span class="py-builtin">tuple</span>(<span class="py-variable">mon_set</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Set vers tuple : {<span class="py-variable">mon_tuple</span>}"</span>) <span class="py-comment"># L'ordre n'est pas garanti</span></code></pre></div></div>
+        </div>
+
+        <div id="exercices-conversions" class="mt-16"><h3 class="text-2xl font-semibold mb-4">Série d'Exercices sur les Conversions</h3><div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm border"><h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 1 : Nettoyer et Trier une Liste</h4><p class="text-gray-700 mb-4">Vous avez une liste de scores avec des doublons : <code>[88, 92, 75, 88, 95, 75, 100]</code>. Créez une nouvelle liste qui contient les scores uniques, triés par ordre croissant.</p><button  onclick="toggleSolution('sol_conv_1')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button><div id="sol_conv_1" class="solution"><div class="code-block"><pre><code><span class="py-variable">scores</span> <span class="py-operator">=</span> [<span class="py-number">88</span>, <span class="py-number">92</span>, <span class="py-number">75</span>, <span class="py-number">88</span>, <span class="py-number">95</span>, <span class="py-number">75</span>, <span class="py-number">100</span>]
+<span class="py-comment"># Étape 1 : Convertir en set pour éliminer les doublons</span>
+<span class="py-variable">scores_uniques_set</span> <span class="py-operator">=</span> <span class="py-builtin">set</span>(<span class="py-variable">scores</span>)
+<span class="py-comment"># Étape 2 : Reconvertir en liste pour pouvoir la trier</span>
+<span class="py-variable">scores_uniques_liste</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">scores_uniques_set</span>)
+<span class="py-comment"># Étape 3 : Trier la liste</span>
+<span class="py-variable">scores_uniques_liste</span>.<span class="py-function">sort</span>()
+<span class="py-function">print</span>(<span class="py-string">f"Scores uniques et triés : {<span class="py-variable">scores_uniques_liste</span>}"</span>) <span class="py-comment"># Devrait afficher [75, 88, 92, 95, 100]</span>
+
+<span class="py-comment"># Version compacte</span>
+<span class="py-variable">scores_tries</span> <span class="py-operator">=</span> <span class="py-builtin">sorted</span>(<span class="py-builtin">list</span>(<span class="py-builtin">set</span>(<span class="py-variable">scores</span>)))
+<span class="py-function">print</span>(<span class="py-string">f"Scores (version compacte) : {<span class="py-variable">scores_tries</span>}"</span>)</code></pre></div></div></div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border"><h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 2 : Créer un Dictionnaire à partir de deux Listes</h4><p class="text-gray-700 mb-4">Vous avez une liste de produits et une liste de prix correspondants. Créez un dictionnaire où les clés sont les produits et les valeurs sont les prix. Utilisez la fonction <code>zip()</code>.
+<br><code>produits = ["pomme", "banane", "cerise"]</code>
+<br><code>prix = [0.5, 0.25, 1.0]</code>
+</p><button  onclick="toggleSolution('sol_conv_2')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button><div id="sol_conv_2" class="solution"><div class="code-block"><pre><code><span class="py-variable">produits</span> <span class="py-operator">=</span> [<span class="py-string">"pomme"</span>, <span class="py-string">"banane"</span>, <span class="py-string">"cerise"</span>]
+<span class="py-variable">prix</span> <span class="py-operator">=</span> [<span class="py-number">0.5</span>, <span class="py-number">0.25</span>, <span class="py-number">1.0</span>]
+
+<span class="py-comment"># zip() crée un itérateur de tuples (('pomme', 0.5), ('banane', 0.25), ...)</span>
+<span class="py-comment"># dict() peut directement convertir cet itérateur en dictionnaire</span>
+<span class="py-variable">catalogue</span> <span class="py-operator">=</span> <span class="py-builtin">dict</span>(<span class="py-builtin">zip</span>(<span class="py-variable">produits</span>, <span class="py-variable">prix</span>))
+<span class="py-function">print</span>(<span class="py-string">f"Catalogue des produits : {<span class="py-variable">catalogue</span>}"</span>)
+<span class="py-comment"># Devrait afficher {'pomme': 0.5, 'banane': 0.25, 'cerise': 1.0}</span></code></pre></div></div></div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border"><h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 3 : Liste des Valeurs Uniques d'un Dictionnaire</h4><p class="text-gray-700 mb-4">À partir du dictionnaire <code>notes = {"Maths": 15, "Physique": 12, "Français": 15, "Histoire": 12}</code>, créez une liste des notes uniques attribuées.</p><button  onclick="toggleSolution('sol_conv_3')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button><div id="sol_conv_3" class="solution"><div class="code-block"><pre><code><span class="py-variable">notes</span> <span class="py-operator">=</span> {<span class="py-string">"Maths"</span>: <span class="py-number">15</span>, <span class="py-string">"Physique"</span>: <span class="py-number">12</span>, <span class="py-string">"Français"</span>: <span class="py-number">15</span>, <span class="py-string">"Histoire"</span>: <span class="py-number">12</span>}
+<span class="py-comment"># Étape 1 : Extraire les valeurs du dictionnaire</span>
+<span class="py-variable">toutes_les_notes</span> <span class="py-operator">=</span> <span class="py-variable">notes</span>.<span class="py-function">values</span>()
+<span class="py-comment"># Étape 2 : Convertir en ensemble pour obtenir les valeurs uniques</span>
+<span class="py-variable">notes_uniques_set</span> <span class="py-operator">=</span> <span class="py-builtin">set</span>(<span class="py-variable">toutes_les_notes</span>)
+<span class="py-comment"># Étape 3 : Reconvertir en liste</span>
+<span class="py-variable">liste_notes_uniques</span> <span class="py-operator">=</span> <span class="py-builtin">list</span>(<span class="py-variable">notes_uniques_set</span>)
+<span class="py-function">print</span>(<span class="py-string">f"Liste des notes uniques : {<span class="py-variable">liste_notes_uniques</span>}"</span>) <span class="py-comment"># Devrait afficher [12, 15] ou [15, 12]</span></code></pre></div></div></div>
+             <div class="bg-white p-6 rounded-lg shadow-sm border"><h4 class="text-lg font-semibold text-gray-900 mb-2">Exercice 4 : Caractères Uniques d'une Chaîne</h4><p class="text-gray-700 mb-4">Écrivez une fonction <code>caracteres_uniques(chaine)</code> qui prend une chaîne de caractères et retourne un tuple contenant tous les caractères uniques de cette chaîne, en ignorant la casse.</p><button  onclick="toggleSolution('sol_conv_4')" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors">Afficher la solution</button><div id="sol_conv_4" class="solution"><div class="code-block"><pre><code><span class="py-keyword">def</span> <span class="py-function">caracteres_uniques</span>(<span class="py-variable">chaine</span>):
+    <span class="py-comment"># Mettre la chaîne en minuscules pour ignorer la casse</span>
+    <span class="py-variable">chaine_minuscules</span> <span class="py-operator">=</span> <span class="py-variable">chaine</span>.<span class="py-function">lower</span>()
+    <span class="py-comment"># Une chaîne peut être directement convertie en ensemble de ses caractères</span>
+    <span class="py-variable">set_caracteres</span> <span class="py-operator">=</span> <span class="py-builtin">set</span>(<span class="py-variable">chaine_minuscules</span>)
+    <span class="py-comment"># Convertir l'ensemble en tuple</span>
+    <span class="py-keyword">return</span> <span class="py-builtin">tuple</span>(<span class="py-variable">set_caracteres</span>)
+
+<span class="py-comment"># Test</span>
+<span class="py-variable">mot</span> <span class="py-operator">=</span> <span class="py-string">"Bonjour le Monde"</span>
+<span class="py-function">print</span>(<span class="py-function">caracteres_uniques</span>(<span class="py-variable">mot</span>))
+<span class="py-comment"># Devrait afficher un tuple comme ('j', 'd', 'u', 'l', ' ', 'b', 'm', 'n', 'r', 'o', 'e') (l'ordre peut varier)</span></code></pre></div></div></div>
+        </div></div>
+        <div class="text-right mt-8"> <a href="#page-top" class="text-sm font-semibold text-blue-600 hover:underline">↑ Retour en haut</a> </div>
+    </section>

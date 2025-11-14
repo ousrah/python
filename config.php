@@ -29,6 +29,7 @@ $parcours = [
             ["titre" => "Les Tuples", "ancre" => "#tuples"],
             ["titre" => "Les Dictionnaires", "ancre" => "#dictionnaires"],
             ["titre" => "Les Ensembles (Sets)", "ancre" => "#sets"],
+            ["titre" => "Conversions Entre Collections", "ancre" => "#conversions-collections"],
         ]
     ],
     "Partie 4" => [

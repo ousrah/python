@@ -4,7 +4,7 @@
     <h2 id="page-top" class="text-3xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-6 mt-16">Partie 5 : Modules, Bibliothèques et l'Écosystème Python</h2>
 
     <section id="bibliotheques" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-3">Chapitre 16 : Utiliser des Bibliothèques (Standard & Externe)</h3>
+        <h3 class="text-2xl font-semibold mb-3">Chapitre 19 : Utiliser des Bibliothèques (Standard & Externe)</h3>
         <p class="text-xl text-gray-600 mb-8 leading-relaxed">Personne ne réinvente la roue en programmation. Python est livré avec une vaste "boîte à outils" appelée la **Bibliothèque Standard**, et vous donne accès à des centaines de milliers d'outils supplémentaires créés par la communauté. Apprendre à les utiliser est la compétence la plus importante pour devenir efficace en Python.</p>
 
         <div class="space-y-8">

@@ -7,7 +7,7 @@
     <!-- CHAPITRE 14 : LA GESTION DES EXCEPTIONS -->
     <!-- =================================================================== -->
     <section id="exceptions" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-3">Chapitre 14 : La Gestion des Exceptions (try...except)</h3>
+        <h3 class="text-2xl font-semibold mb-3">Chapitre 15 : La Gestion des Exceptions (try...except)</h3>
         <p class="text-xl text-gray-600 mb-8 leading-relaxed">Un programme robuste ne doit pas "planter" à la moindre erreur inattendue (une saisie utilisateur incorrecte, un fichier manquant...). La gestion des exceptions est le mécanisme de Python qui permet d'anticiper ces erreurs, de les "attraper" (catch) et d'exécuter un plan B pour que le programme continue de fonctionner ou se termine proprement.</p>
 
         <div class="space-y-8">
@@ -68,7 +68,7 @@
 
     
     <section id="fichiers" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-3">Chapitre 15 : Manipulation de Fichiers Texte (.txt)</h3>
+        <h3 class="text-2xl font-semibold mb-3">Chapitre 16 : Manipulation de Fichiers Texte (.txt)</h3>
         <p class="text-xl text-gray-600 mb-8 leading-relaxed">La manipulation de fichiers est essentielle car elle permet de sauvegarder des données de manière permanente (persistance), de lire des configurations, de traiter de grands volumes d'informations et de faire communiquer vos programmes avec le monde extérieur.</p>
         
         <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 mb-8" role="alert">
@@ -107,10 +107,10 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- CHAPITRE 16 : FICHIERS CSV -->
+    <!-- CHAPITRE 17 : FICHIERS CSV -->
     <!-- =================================================================== -->
     <section id="fichiers-csv" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-3">Chapitre 16 : Travailler avec les Fichiers CSV</h3>
+        <h3 class="text-2xl font-semibold mb-3">Chapitre 17 : Travailler avec les Fichiers CSV</h3>
         <p class="text-xl text-gray-600 mb-8 leading-relaxed">Le format CSV (Comma-Separated Values) est un standard pour stocker des données tabulaires (comme dans un tableur Excel). Python dispose d'un module intégré <code>csv</code> qui rend la lecture et l'écriture de ces fichiers très simples et fiables.</p>
 
         <div class="space-y-8">
@@ -144,10 +144,10 @@
     </section>
 
     <!-- =================================================================== -->
-    <!-- CHAPITRE 17 : FICHIERS JSON -->
+    <!-- CHAPITRE 18 : FICHIERS JSON -->
     <!-- =================================================================== -->
     <section id="fichiers-json" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-3">Chapitre 17 : Travailler avec les Fichiers JSON</h3>
+        <h3 class="text-2xl font-semibold mb-3">Chapitre 18 : Travailler avec les Fichiers JSON</h3>
         <p class="text-xl text-gray-600 mb-8 leading-relaxed">Le format JSON (JavaScript Object Notation) est le standard du web pour l'échange de données structurées. Sa syntaxe est très proche des dictionnaires et listes Python, ce qui le rend extrêmement facile à manipuler avec le module intégré <code>json</code>.</p>
 
         <div class="space-y-8">

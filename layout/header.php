@@ -31,6 +31,7 @@ require_once 'config.php';
             <div>
                 <p class="font-semibold text-xl text-gray-800 group-hover:text-blue-600 transition-colors">ISMO - Institut Spécialisé Dans les Métiers de l'Offshoring de Tétouan</p>
                 <p class="text-sm text-gray-600">Office de la Formation Professionnelle et de la Promotion du Travail</p>
+                    <p class="text-sm text-blue-500" style="text-decoration: underline;"><a href = "https://ousrah.portal-edu.com/#cours">Aller au catalogue de tous les cours</a></p>
             </div>
         </a>
     </div>
